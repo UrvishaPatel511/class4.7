@@ -8,7 +8,6 @@ body {
 }
 
 h1 {
-    /*background-color: rgb(223, 42, 162);*/
     color: rgb(243, 22, 132);
     text-align: center;
     justify-self: center;
@@ -22,8 +21,6 @@ h1 {
     justify-self: center;
     justify-content: space-between;
 }
-
-
 
 .img_deg {
     display: grid;
@@ -113,6 +110,7 @@ h5 {
 table, th, td {
     border: 2px solid black;
 }
+
 .moon {
     background-color: rgba(0, 0, 255, 0.918);
     color: antiquewhite;
@@ -127,14 +125,8 @@ table, th, td {
     font-family: cursive;
     color: rebeccapurple;
     text-align: center;
-
 }
 
-
-div:hover me {
-    display: block;
-    color: blue;
-}
 
 
 
