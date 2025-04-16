@@ -3,32 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Favorite Band</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>KEANE(Band)</h1>
+    <h1>My Absolute Favorite Band KEANE!!</h1>
     <p class="mus_symbol">&#127925; &#119071;&#127926;&#127932;&#x1F493;&#127928;&#119148;&#119189;&#119245;&#119258; </p>
+
     <div class="img_deg">
-        <img src="images/download (1).jpeg" height="320px" width="320px" alt="">
-        <img src="images/FE_Keane_Website responsive design NEW 3600x1500px.jpg" height="320px" width="320px" alt="">
-        <img src="images/Keane 'The Way I Feel' by Kevin Godley.jpg" height="320px" width="320px" alt="">
-        <img src="images/Keane2009.jpg" height="320px" width="320px" alt="">
+        <img src="images/download (1).jpeg" height="320px" width="320px" alt="A virtuoso">
+        <img src="images/FE_Keane_Website responsive design NEW 3600x1500px.jpg" height="320px" width="320px" alt="Your music fills the room with energy and excitement.">
+        <img src="images/Keane 'The Way I Feel' by Kevin Godley.jpg" height="320px" width="320px" alt="He create such a dreamy,beautiful sound on the piano.">
+        <img src="images/Keane2009.jpg" height="320px" width="320px" alt="That was a really thoughful performance.">
     </div>
+
     <h2>It's all about Keane (band's)story</h2>
     <div class="container">
     <p>Keane's story is an emotional one, with a twist now and then. Tim Rice-Oxley (piano), Tom Chaplin (vocals, guitar), Richard Hughes (drums) and Jesse Quin (bass) know how to make sparks fly. After a long hiatus and years of uncertainty, they are back with Cause and Effect, an album that will hopefully be the first of a second series. A second phase in the band's history, which will undoubtedly be less dense, more spontaneous and adapted to their life as fathers. No more albums and tours, but listening to each other and enjoying, without knowing what will happen next. One thing is certain, Keane has not finished surprising us.</p>
+ </div>
 
-</div>
 <div>
-    <h3>The Band's bagan</h3>
+    <h3>The Band's began</h3>
     <p>The band's story began in 1997 with a group of friends in Battle, southern England. After a difficult first few years, the tide turned in 2002 when they were spotted by independent label Fierce Panda, who signed them to their first contract. The first single, "Everybody's changing", was released, followed by "This is the last time", to positive reviews. This led to more radio play and concerts, and the band was signed to Universal's Island label. 2004 was the year of consecration for Keane, with the release of the album "Hopes and Fears", which brought them success in the UK and around the world.</p>
 </div>
+
     <h4>Keane's Albums</h4>
+
     <div class="three_col_flexbox">
 <div class="col">
-    <p><span class="span-example">Studio Albums and Years</span></p>
-    <ul>
+   <p><span class="span-example">Studio Albums and Years</span></p>
+<ul>
         <li>Hopes and Fears in 2004</li>
         <li>Under the Iron Sea in 2006</li>
         <li>Perfect Symmetry in 2008</li>
@@ -39,9 +43,10 @@
         <li>Cause and Effect in 2019</li>
     </ul>
 </div>
+
 <div class="col">
     <h5> <span class="span-mid" >My One of The Most Favorite song</span></h5>
-    <img src="images/maxresdefault.jpg" height="250px" alt="">
+    <img src="images/maxresdefault.jpg" height="250px" alt="That melody will brighten even the darkest rooms.">
 
 </div>
 <div class="col">
@@ -91,6 +96,39 @@
         </tr>
     </table>
 </div>
-</div>       
+</div>
+ 
+
+<button class="moon" onclick="generateSelectOption()">Generate Select Option</button>
+
+<p>Members and Instruments : <span id="selectedInst">Nothing Selected</span></p>
+
+<div class="selectOptionBlock"></div>
+
+<P class="me">Developed by Urvisha Patel</P>
+
+<script>
+
+let instruments = ["Time Rice(piano)","Tom Chaplin(vocal,guitar)","Richard(drums)","Jesse Quin(bass)"];
+let selectOptionBlock = document.querySelector(".selectOptionBlock");
+
+function generateSelectOption(){
+    let select = document.createElement("select");
+    select.setAttribute("onchange","getSelectedItem(event)")
+    instruments.forEach(item=>{
+        let option = document.createElement("option");
+        option.innerHTML = item;
+        option.value = item;
+        select.append(option);
+    })
+
+    selectOptionBlock.appendChild(select);
+}
+
+function getSelectedItem(e){
+     document.getElementById("selectedInst").innerHTML = e.target.value;
+}
+
+</script>
 </body>
 </html

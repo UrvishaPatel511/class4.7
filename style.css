@@ -5,17 +5,16 @@ body {
     border: black solid 3px;
     padding: 8px;
     margin: 5px;
-
-
 }
 
 h1 {
-    background-color: rgb(223, 42, 162);
-    color: bisque;
+    /*background-color: rgb(223, 42, 162);*/
+    color: rgb(243, 22, 132);
     text-align: center;
     justify-self: center;
-    font-size: 40px;
+    font-size: 30px;
     padding: 10px;
+    border-radius: 50px;
     
 }
 
@@ -25,15 +24,26 @@ h1 {
 }
 
 
-.container {
-    display: flexbox;
-    font-size: 17px;
+
+.img_deg {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr auto);
+    gap: 10px;
+    margin-bottom: 10px;
+    width: 320px;
+    height: 320px;
 }
+
 h2 {
     color: #008b1e;
     text-align: left;
     justify-self: left;
     font-size: 30px;
+}
+
+.container {
+    display: flexbox;
+    font-size: 17px;
 }
 
 h3 {
@@ -46,14 +56,6 @@ div {
     font-size: 17px;
 }
 
-.img_deg {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr auto);
-    gap: 10px;
-    margin-bottom: 10px;
-    width: 320px;
-    height: 320px;
-}
 h4 {
 
     color: rgb(243, 22, 132);
@@ -68,8 +70,9 @@ h5 {
     text-align: center;
     justify-self: center;
     font-size: 20px;
-    margin-bottom: 5px;
-    margin-top: 5px;
+    margin-top: 10px;
+    margin-bottom: 2px;
+
 }
 .three_col_flexbox {
     min-width: 1200px;
@@ -87,6 +90,7 @@ h5 {
 .span-example {
     color: #008b1e;
     cursor: pointer;
+    
 }
 .span-example:hover {
     text-decoration: underline;
@@ -108,6 +112,28 @@ h5 {
 
 table, th, td {
     border: 2px solid black;
+}
+.moon {
+    background-color: rgba(0, 0, 255, 0.918);
+    color: antiquewhite;
+    border-radius: 20px;
+    height: 35px;
+    margin-bottom: 20px;
+    border: darkgray solid;
+    justify-content: center;
+}
+
+.me {
+    font-family: cursive;
+    color: rebeccapurple;
+    text-align: center;
+
+}
+
+
+div:hover me {
+    display: block;
+    color: blue;
 }
 
 
